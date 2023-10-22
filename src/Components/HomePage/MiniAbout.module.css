@@ -1,0 +1,36 @@
+.picture-content {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.background-picture {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/4795/4795897.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  .picture-content {
+    gap: 3rem;
+    flex-direction: column;
+    padding: 0%;
+  }
+}
+
+@media (max-width: 1035px) {
+  .overflow-layout {
+    overflow-x: scroll;
+  }
+}
+
+@media (min-width: 1035px) {
+  .overflow-layout {
+    justify-content: center;
+  }
+}
+
+.cards:hover {
+  padding-top: 2rem;
+}

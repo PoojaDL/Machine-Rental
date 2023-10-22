@@ -1,0 +1,9 @@
+.card-design {
+  width: 30%;
+}
+
+@media (max-width: 900px) {
+  .card-design {
+    width: 20rem;
+  }
+}

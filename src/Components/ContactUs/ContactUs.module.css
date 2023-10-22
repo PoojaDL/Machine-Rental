@@ -1,0 +1,12 @@
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 980px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}

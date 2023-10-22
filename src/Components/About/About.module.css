@@ -1,0 +1,32 @@
+.accomplished {
+  width: 12rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background: black;
+  color: white;
+}
+
+.accFlex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.wholeBox {
+  background: lightgrey;
+  border-radius: 2rem;
+}
+
+.topImage {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 800px) {
+  .topImage {
+    width: 65%;
+    height: 50%;
+  }
+}

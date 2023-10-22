@@ -1,0 +1,28 @@
+.background {
+  height: 550px;
+  margin: 0%;
+  width: 100%;
+  background-size: contain;
+  background-position: 50%;
+}
+
+.header-content {
+  position: relative;
+  top: 20%;
+  text-align: center;
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  .background {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .header-content {
+    position: relative;
+    top: 20%;
+    width: 80%;
+  }
+}

@@ -1,0 +1,24 @@
+.cardBody {
+  width: 30rem;
+}
+
+@media (max-width: 600px) {
+  .cardBody {
+    width: 90%;
+  }
+}
+
+.imageBody {
+  width: 40rem;
+  border: 3px solid grey;
+  border-style: outset;
+  padding: 1.5rem;
+}
+
+.imageBody:hover {
+  padding: 0;
+}
+
+.machine-image {
+  width: 100%;
+}

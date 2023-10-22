@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Fragment } from "react";
+import Home from "./Components/HomePage/Home";
+import Machines from "./Components/Machines/Machines";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import { Route } from "react-router-dom/cjs/react-router-dom.min";
+import About from "./Components/About/About";
+import RentForm from "./Components/RentForm/RentForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Route path="/contactUs">
+        <ContactUs />
+      </Route>
+      <Route path="/rentalForm">
+        <RentForm />
+      </Route>
+      <Route path="/machines">
+        <Machines />
+      </Route>
+    </Fragment>
   );
 }
 
