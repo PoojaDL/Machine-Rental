@@ -7,3 +7,9 @@
     width: 20rem;
   }
 }
+
+.navLink:hover,
+a.active {
+  color: black;
+  padding-bottom: 0.25rem;
+}

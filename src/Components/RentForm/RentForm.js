@@ -69,7 +69,14 @@ const RentForm = () => {
           </FloatingLabel>
 
           <div align="center" className="my-3 d-grid">
-            <Button size="lg">Rent Your Machine</Button>
+            <Button
+              onClick={() => {
+                alert("Successfully added your information");
+              }}
+              size="lg"
+            >
+              Rent Your Machine
+            </Button>
           </div>
         </div>
       </div>

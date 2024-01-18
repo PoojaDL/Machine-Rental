@@ -1,5 +1,7 @@
 .cards:hover {
-  padding-top: 2rem;
+  color: white;
+  box-shadow: 0 0 10px black;
+  text-shadow: 0 0 2px white;
 }
 
 @media (max-width: 1280px) {

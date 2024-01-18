@@ -40,7 +40,7 @@ const Reviews = () => {
           }}
         >
           {data.map((item) => (
-            <div key={item.name} className={`my-3 ${styles.cards}`}>
+            <div key={item.name} className={`my-3`}>
               <Card
                 style={{
                   width: "14rem",
@@ -48,7 +48,7 @@ const Reviews = () => {
                   background: "#999999",
                   border: "1px solid grey",
                 }}
-                className="py-2"
+                className={`${styles.cards}`}
               >
                 <img
                   src="https://cdn-icons-png.flaticon.com/128/11042/11042331.png"

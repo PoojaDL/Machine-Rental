@@ -54,8 +54,8 @@ const Footer = () => {
           />
         </a>
       </div>
-      <p style={{ color: "white", margin: "0px" }}>
-        Made-with-Love © 2023 Poojadl02
+      <p style={{ color: "white", margin: "0px" }} className="pb-3">
+        Made-with-Love © 2024 Poojadl02
       </p>
     </div>
   );

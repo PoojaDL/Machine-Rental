@@ -68,7 +68,12 @@ const ContactUs = () => {
                 <Form.Control as="textarea" rows={3} />
               </Form.Group>
 
-              <Button className="btn btn-lg btn-warning mx-auto">
+              <Button
+                onClick={() => {
+                  alert("Thank you for connecting us");
+                }}
+                className="btn btn-lg btn-warning mx-auto"
+              >
                 Send Now
               </Button>
             </Form>

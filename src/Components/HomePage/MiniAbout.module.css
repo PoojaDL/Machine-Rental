@@ -32,5 +32,6 @@
 }
 
 .cards:hover {
-  padding-top: 2rem;
+  box-shadow: 0 0 10px black;
+  text-shadow: 0 0 2px #87209e;
 }

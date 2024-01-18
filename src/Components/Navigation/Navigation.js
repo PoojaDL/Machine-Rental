@@ -1,14 +1,26 @@
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link, NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import styles from "./Navigation.module.css";
+
 const Navigation = () => {
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
-      <Navbar expand={"md"} bg="dark" data-bs-theme="dark" className="p-1">
+      <Navbar
+        expand={"md"}
+        bg="dark"
+        data-bs-theme="dark"
+        varient="dark"
+        style={{ position: "sticky", top: 0, zIndex: 10 }}
+        onClick={scrollToTop}
+      >
         <Container fluid>
           <Navbar.Brand>
-            <h1>
-              <b>Easy Rent</b>
-            </h1>
+            <h1 className="ps-1">Easy Rent</h1>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
           <Navbar.Offcanvas
@@ -23,29 +35,34 @@ const Navigation = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link>
-                  <Link to="/" style={{ fontSize: "1.2em" }}>
-                    Home
-                  </Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link to="/about" style={{ fontSize: "1.2em" }}>
-                    About Us
-                  </Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link
-                    to="/machines/soil-cultivation"
-                    style={{ fontSize: "1.2em" }}
-                  >
-                    Machines
-                  </Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link to="/contactUs" style={{ fontSize: "1.2em" }}>
-                    Contact Us
-                  </Link>
-                </Nav.Link>
+                <NavLink
+                  className={styles.navLink}
+                  to="/home"
+                  activeClassName={styles.active}
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  className={styles.navLink}
+                  activeClassName={styles.active}
+                  to="/about"
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  className={styles.navLink}
+                  activeClassName={styles.active}
+                  to="/machines/soil-cultivation"
+                >
+                  Machines
+                </NavLink>
+                <NavLink
+                  className={styles.navLink}
+                  activeClassName={styles.active}
+                  to="/contactUs"
+                >
+                  Contact-Us
+                </NavLink>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

@@ -46,8 +46,11 @@ const Categories = () => {
           }}
         >
           {data.map((item) => (
-            <div key={item.category} className={`my-3 ${styles.cards}`}>
-              <Card style={{ width: "18rem", background: "#999999" }}>
+            <div key={item.category} className={`my-3`}>
+              <Card
+                style={{ width: "18rem", background: "#999999" }}
+                className={styles.cards}
+              >
                 <Card.Img
                   variant="top"
                   width="300px"

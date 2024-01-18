@@ -15,8 +15,8 @@
 }
 
 .wholeBox {
-  background: lightgrey;
-  border-radius: 2rem;
+  /* background: lightgrey; */
+  border-radius: 1rem;
 }
 
 .topImage {

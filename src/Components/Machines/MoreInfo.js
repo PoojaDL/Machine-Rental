@@ -16,14 +16,18 @@ const MoreInfo = (props) => {
           position: "absolute",
           padding: "5%",
           top: "0px",
-          zIndex: "10px",
+          zIndex: "10",
           width: "100%",
           background: "rgba(0,0,0,0.5)",
         }}
-        onClick={clickHandler}
       >
-        <div style={{ background: "white", borderRadius: "2rem" }}>
-          <Button className="btn btn-danger mt-4 ms-4 mb-3">Back</Button>
+        <div style={{ background: "white", borderRadius: "0.8rem" }}>
+          <Button
+            className="btn btn-danger mt-4 ms-4 mb-3"
+            onClick={clickHandler}
+          >
+            Back
+          </Button>
           <div align="center">
             <h2>{props.item.id.toUpperCase()}</h2>
           </div>
@@ -94,7 +98,14 @@ const MoreInfo = (props) => {
                 <p>Driver Charge : ₹300</p>
                 <p>Extra Charges : ₹200</p>
                 <h2>Total Cost : ₹{totalPrice}</h2>
-                <Button variant="primary">Book Now</Button>
+                <Button
+                  onClick={() => {
+                    alert("Booked Successfully");
+                  }}
+                  variant="primary"
+                >
+                  Book Now
+                </Button>
               </Card.Body>
             </Card>
           </div>
